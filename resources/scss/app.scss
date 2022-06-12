@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Arial";
+    // адрес шрифта и тип
+    src: url("/fonts/arialmt.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Verdana";
+    // адрес шрифта и тип
+    src: url("/fonts/Verdana.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Tahoma";
+    // адрес шрифта и тип
+    src: url("/fonts/tahoma.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@import "home";
+body{
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    //background: url("/res/background_main.dark.jpg");
+    background: url("https://lh3.google.com/u/0/d/1tVktHO_V5vRsRNc001YQIeEdNTYmy-fd=w2560-h1240-iv1");
+    background-attachment: fixed;
+    background-position: center 0px;
+}
+.choice_navigation{
+    font-family: "Verdana";
+}
+#body{
+    .no_display{
+        display: none;
+    }
+}
