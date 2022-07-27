@@ -26,271 +26,22 @@
 {{--        <p>Чакра</p>--}}
 {{--    </div>--}}
     <ul>
-        <li class="active">
+        <li class="{{-- active--}}">
             <div class="menu">
                 <span onmouseover="open_sub(this)">Типы</span>
                 <div class="sub_li active_li">
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
+                    @foreach($test as $item)
+                        <div class="sub">
+                            <div>
+                                <div class="img">
+                                    <img src="{{asset($item->img)}}" alt="">
+{{--                                    <img src="{{asset($item->img)}}" alt="">--}}
+                                </div>
+                                <a href=""><p>{{$item->name}}</p></a>
                             </div>
-                            <a href=""><p>Ниндзюцу</p></a>
+                            <b>▲</b>
                         </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Тайдзюцу</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Гендзюцу</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Додзюцу</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Призыв</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Генкай</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Тота</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Мора</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Сендзюцу</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Марионетка</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Телепорт</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Медик</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Реинк.</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Печать</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Проклят</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Клонир</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Запретный</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Секретный</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Биджу</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Кендзюцу</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Букидзюцу</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Сюрикен</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                       <div>
-                           <div class="img">
-                               <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                           </div>
-                           <a href=""><p>Поглощение</p></a>
-                       </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Барьер</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Искусство</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Звездный</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Поток</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Групповой</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
-                    <div class="sub">
-                        <div>
-                            <div class="img">
-                                <img src="{{asset("res/menu/img_1.png")}}" alt="">
-                            </div>
-                            <a href=""><p>Общий</p></a>
-                        </div>
-                        <b>▲</b>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </li>
@@ -425,4 +176,11 @@
             </div>
         </li>
     </ul>
+</div>
+<div class="home_container">
+    <a href="{{asset("home")}}">
+        <div class="img logo">
+            <img src="{{asset("res/logo_home.dark.png")}}" alt="">
+        </div>
+    </a>
 </div>

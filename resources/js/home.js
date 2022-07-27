@@ -18,5 +18,14 @@ if (get_come_in.style.display == "block"){
 //menu
 window.open_sub=(open)=>{
     const get_sub = open.querySelector(".navigation_container");
-        open.style.color = "red";
+        open.style.display = "block";
+}
+
+//page_desiding
+const get_link_line = document.querySelector(".tag_a a");
+const get_page_menu = document.querySelector(".choice_navigation a");
+console.log(get_link_line);
+console.log(get_page_menu);
+window.change_link=(get_information_tag)=>{
+    //
 }

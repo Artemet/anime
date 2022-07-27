@@ -26,7 +26,16 @@ if (get_come_in.style.display == "block") {
 
 window.open_sub = function (open) {
   var get_sub = open.querySelector(".navigation_container");
-  open.style.color = "red";
+  open.style.display = "block";
+}; //page_desiding
+
+
+var get_link_line = document.querySelector(".tag_a a");
+var get_page_menu = document.querySelector(".choice_navigation a");
+console.log(get_link_line);
+console.log(get_page_menu);
+
+window.change_link = function (get_information_tag) {//
 };
 /******/ })()
 ;

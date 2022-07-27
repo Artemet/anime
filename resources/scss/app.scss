@@ -19,13 +19,22 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: "Comic Sans MS";
+    // адрес шрифта и тип
+    src: url("/fonts/comici.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@import "page";
 @import "home";
+@import "models";
 body{
     font-family: "Arial";
     margin: 0;
     padding: 0;
     //background: url("/res/background_main.dark.jpg");
-    background: url("https://lh3.google.com/u/0/d/1tVktHO_V5vRsRNc001YQIeEdNTYmy-fd=w2560-h1240-iv1");
+    background: url("/res/background_main.dark.jpg");
     background-attachment: fixed;
     background-position: center 0px;
 }
