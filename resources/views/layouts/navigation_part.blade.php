@@ -1,6 +1,6 @@
 {{--@include("modal_parts/get_in")--}}
 <div class="navigation_part">
-    <div class="come_in" title="Форма авторизации">
+    <div class="come_in" title="Форма авторизации" onclick="open_modal_getin()">
         <p><span>Войти</span> на сайт</p>
         <div class="circle_container">
             <div class="circle"></div>
@@ -14,6 +14,13 @@
         <input type="submit" value="Найти" class="button">
     </form>
     <div class="social">
+        <div class="social_part" title="Jutsu+">
+            <a href="">
+                <div class="img plus_img">
+                    <img src="{{asset("res/plus_ico_green.png")}}" alt="">
+                </div>
+            </a>
+        </div>
         <div class="social_part" title="Школа техник Наруто ВКонтакте">
             <a href="https://vk.com/jutsu">
                 <div class="img">

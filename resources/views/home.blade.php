@@ -1,5 +1,6 @@
 @extends("layouts.app")
 @section("content")
+    @include("modal_parts/get_in")
     @include("navigation")
     <div class="content">
         <div class="watch">
@@ -19,9 +20,10 @@
             </div>
         </div>
         @include("layouts/navigation_part")
-        <div class="main_container">
+        <div class="main_container" onclick="close_modal_getin()">
             <div class="part_left_container">
                 <div class="paragraph_container">
+                    @include("modal_parts/rong_information")
                     <div class="paragraph main_part">
                         <div class="img">
                             <img src="{{asset("res/naruto_sasuke_new.png")}}" alt="">

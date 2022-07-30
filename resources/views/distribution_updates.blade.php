@@ -3,7 +3,7 @@
     @include("navigation")
     <div class="content">
         @include("layouts/navigation_part")
-        <div class="main_container">
+        <div class="main_container" onclick="close_modal_getin()">
             <div class="part_left_container distribution_updates_page padding_none" style="position: relative;">
                 <h1 class="page_h">Подписка на обновления</h1>
                 <p class="distribution_updates_page">Здесь вы можете настроить подписку

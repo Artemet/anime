@@ -496,3 +496,26 @@ select.anime_mail{
         }
     }
 }
+//plus
+.plus_page{
+    .plus_page_part{
+        color: #cdcdd3;
+        background-color: #363a37;
+        border-radius: 10px;
+        font-family: "Verdana";
+        font-size: 14px;
+        padding: 15px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        p{
+            margin: 16px 0;
+        }
+        p.information{
+            margin-top: 10px;
+            padding: 0;
+            margin-bottom: 0;
+        }
+    }
+}

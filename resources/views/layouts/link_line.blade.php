@@ -10,3 +10,4 @@
         <a href="{{asset("home/contacts")}}" onclick="change_link(this)">Контакты</a>
     </div>
 </div>
+<script src="{{asset("js/models.js")}}"></script>

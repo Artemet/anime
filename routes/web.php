@@ -71,6 +71,13 @@ Route::get("/home/manga_naruto", function (){
         ->with("test", $test)
         ->with("anime", $anime);
 });
+Route::get("/home/plus", function(){
+    $test = nav_information::get();
+    $anime = Anime::get();
+    return view("plus")
+        ->with("test", $test)
+        ->with("anime", $anime);
+});
 Route::get("/home/in_card", [\App\Http\Controllers\AnimeController::class, 'index'])->name("in_card");
 //Route::get("/home/manga_naruto", [\App\Http\Controllers\Naruto_video_pageController::class, 'index']);
 Route::get("/home/all_series", [\App\Http\Controllers\Manga_narutoController::class, 'index']);

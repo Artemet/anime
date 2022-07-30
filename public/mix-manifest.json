@@ -1,6 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/home.js": "/js/home.js",
+    "/js/models.js": "/js/models.js",
     "/css/app.css": "/css/app.css",
     "/res/1-solid.svg": "/res/1-solid.svg",
     "/res/background_main.dark.jpg": "/res/background_main.dark.jpg",

@@ -3,7 +3,7 @@
     @include("navigation")
     <div class="content">
         @include("layouts/navigation_part")
-        <div class="main_container">
+        <div class="main_container" onclick="close_modal_getin()">
             <div class="part_left_container all_techniques">
                 <h1 class="page_h_two">Список дзюцу из Наруто по порядку серий</h1>
                 <div class="technique_container">

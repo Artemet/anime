@@ -3,7 +3,7 @@
     @include("navigation")
     <div class="content">
         @include("layouts/navigation_part")
-        <div class="main_container">
+        <div class="main_container" onclick="close_modal_getin()">
             <div class="part_left_container anime_mail" style="padding-top: 0">
                 <h1 class="page_h">Почтовые аниме-ящики</h1>
                 <p class="anime_mail">Если у вас еще нет своего ящика в одном

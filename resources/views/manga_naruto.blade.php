@@ -3,7 +3,7 @@
     @include("navigation")
     <div class="content">
         @include("layouts/navigation_part")
-        <div class="main_container">
+        <div class="main_container" onclick="close_modal_getin()">
             <div class="part_left_container manga_naruto" style="padding-top: 0">
                 <h1 class="page_h">Вся манга Наруто</h1>
                 <div class="card_container">

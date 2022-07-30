@@ -3,7 +3,7 @@
     @include("navigation")
     <div class="content">
         @include("layouts/navigation_part")
-        <div class="main_container">
+        <div class="main_container" onclick="close_modal_getin()">
             <div class="part_left_container in_card">
                 <div class="img reclam">
                     <a href="https://inlnk.ru/dnYvXm">
@@ -16,6 +16,7 @@
                         <div class="img">
                             {{--                    <img src="{{asset("")}}" alt="">--}}
                             <a href="">
+                                {{dd($anime)}}
                                 <img src="{{asset($anime->img)}}" alt="" class="circle">
                             </a>
                         </div>

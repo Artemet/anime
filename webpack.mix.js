@@ -15,4 +15,5 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/scss/app.scss', 'public/css');
 mix.copy('resources/res', 'public/res');
 mix.copy('resources/fonts', 'public/fonts');
-mix.js('resources/js/home.js', 'public/js')
+mix.js('resources/js/home.js', 'public/js');
+mix.js('resources/js/models.js', 'public/js');
