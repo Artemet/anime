@@ -1,9 +1,8 @@
 <?php
-
-use App\Http\Controllers\Manga_naruto;
+dd("sergey");
 use App\Models\Anime;
 use App\Models\nav_information;
-use Database\Seeders\Manga_narutosSeeder;
+use App\Models\Manga_naruto;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
@@ -22,7 +21,7 @@ use App\Http\Controllers\HomeController;
 Route::get('/', function () {
     $test = nav_information::get();
     $anime = Anime::get();
-    $manga_naruto = Manga_narutos::get();
+    $manga_naruto = Manga_naruto::get();
     return view('welcome')
         ->with("test", $test)
         ->with("anime", $anime)
